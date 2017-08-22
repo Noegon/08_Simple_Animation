@@ -13,6 +13,9 @@
 		254FB66F1F458F0A00A9413C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254FB66D1F458F0A00A9413C /* Main.storyboard */; };
 		254FB6711F458F0A00A9413C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254FB6701F458F0A00A9413C /* Assets.xcassets */; };
 		254FB6741F458F0A00A9413C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254FB6721F458F0A00A9413C /* LaunchScreen.storyboard */; };
+		254FB67D1F4596D100A9413C /* NGNAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254FB67C1F4596D100A9413C /* NGNAnimationViewController.m */; };
+		254FB6801F45A51700A9413C /* UIColor+NGNRandomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 254FB67F1F45A51700A9413C /* UIColor+NGNRandomColors.m */; };
+		3DE30C83D83C059598078641 /* libPods-Simple_Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2B569CD485F12EC2D3022E /* libPods-Simple_Animation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		254FB6701F458F0A00A9413C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254FB6731F458F0A00A9413C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254FB6751F458F0A00A9413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254FB67B1F4596D100A9413C /* NGNAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGNAnimationViewController.h; sourceTree = "<group>"; };
+		254FB67C1F4596D100A9413C /* NGNAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGNAnimationViewController.m; sourceTree = "<group>"; };
+		254FB67E1F45A51700A9413C /* UIColor+NGNRandomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NGNRandomColors.h"; sourceTree = "<group>"; };
+		254FB67F1F45A51700A9413C /* UIColor+NGNRandomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NGNRandomColors.m"; sourceTree = "<group>"; };
+		54DC19DC94402F4784CACA1C /* Pods-Simple_Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple_Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple_Animation/Pods-Simple_Animation.release.xcconfig"; sourceTree = "<group>"; };
+		AB2B569CD485F12EC2D3022E /* libPods-Simple_Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple_Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0E1D2D6BCA352213BCADD5 /* Pods-Simple_Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple_Animation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple_Animation/Pods-Simple_Animation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE30C83D83C059598078641 /* libPods-Simple_Animation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,8 @@
 			children = (
 				254FB6631F458F0900A9413C /* Simple_Animation */,
 				254FB6621F458F0900A9413C /* Products */,
+				EA8D1167F48A887B9F191833 /* Pods */,
+				6D07D5F4AB056ECEEEB30840 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,10 @@
 				254FB6681F458F0A00A9413C /* AppDelegate.m */,
 				254FB66A1F458F0A00A9413C /* ViewController.h */,
 				254FB66B1F458F0A00A9413C /* ViewController.m */,
+				254FB67B1F4596D100A9413C /* NGNAnimationViewController.h */,
+				254FB67C1F4596D100A9413C /* NGNAnimationViewController.m */,
+				254FB67E1F45A51700A9413C /* UIColor+NGNRandomColors.h */,
+				254FB67F1F45A51700A9413C /* UIColor+NGNRandomColors.m */,
 				254FB66D1F458F0A00A9413C /* Main.storyboard */,
 				254FB6701F458F0A00A9413C /* Assets.xcassets */,
 				254FB6721F458F0A00A9413C /* LaunchScreen.storyboard */,
@@ -79,6 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6D07D5F4AB056ECEEEB30840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2B569CD485F12EC2D3022E /* libPods-Simple_Animation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA8D1167F48A887B9F191833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB0E1D2D6BCA352213BCADD5 /* Pods-Simple_Animation.debug.xcconfig */,
+				54DC19DC94402F4784CACA1C /* Pods-Simple_Animation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 254FB6781F458F0A00A9413C /* Build configuration list for PBXNativeTarget "Simple_Animation" */;
 			buildPhases = (
+				884E0E6CC508995E6FD89C8B /* [CP] Check Pods Manifest.lock */,
 				254FB65D1F458F0900A9413C /* Sources */,
 				254FB65E1F458F0900A9413C /* Frameworks */,
 				254FB65F1F458F0900A9413C /* Resources */,
+				5274B4C683AA6CD2EA9E54EA /* [CP] Embed Pods Frameworks */,
+				E77682989281F50965082456 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,14 +184,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5274B4C683AA6CD2EA9E54EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simple_Animation/Pods-Simple_Animation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		884E0E6CC508995E6FD89C8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E77682989281F50965082456 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simple_Animation/Pods-Simple_Animation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		254FB65D1F458F0900A9413C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				254FB66C1F458F0A00A9413C /* ViewController.m in Sources */,
+				254FB67D1F4596D100A9413C /* NGNAnimationViewController.m in Sources */,
 				254FB6691F458F0A00A9413C /* AppDelegate.m in Sources */,
 				254FB6661F458F0A00A9413C /* main.m in Sources */,
+				254FB6801F45A51700A9413C /* UIColor+NGNRandomColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +361,7 @@
 		};
 		254FB6791F458F0A00A9413C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0E1D2D6BCA352213BCADD5 /* Pods-Simple_Animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9M22BH66EU;
@@ -287,6 +375,7 @@
 		};
 		254FB67A1F458F0A00A9413C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DC19DC94402F4784CACA1C /* Pods-Simple_Animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9M22BH66EU;
@@ -317,6 +406,7 @@
 				254FB67A1F458F0A00A9413C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
