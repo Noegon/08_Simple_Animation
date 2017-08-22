@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VNw-JX-Bnf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animations-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGM-yz-hRy">
+                                <rect key="frame" x="16" y="308" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.4366127642" green="0.59543187539999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K4H-ch-Q1g"/>
+                                </constraints>
+                                <state key="normal" title="Second animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ckv-JF-BcJ" kind="show" id="FcR-c5-RFj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-p6-AiS">
+                                <rect key="frame" x="16" y="238" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.62745098040000002" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ohA-Hq-ZJs"/>
+                                </constraints>
+                                <state key="normal" title="First animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ckv-JF-BcJ" kind="show" id="B3o-Dj-BUd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-4b-uaS">
+                                <rect key="frame" x="16" y="378" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.62745098040000002" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xtd-qu-UQo"/>
+                                </constraints>
+                                <state key="normal" title="Third animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ckv-JF-BcJ" kind="show" id="6M7-dH-PsT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Ma-p6-AiS" secondAttribute="trailing" id="20r-Wv-3kg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dGM-yz-hRy" secondAttribute="trailing" id="GWv-w7-PoA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gcs-4b-uaS" secondAttribute="trailing" id="IBb-Mo-CJi"/>
+                            <constraint firstItem="dGM-yz-hRy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IRu-nf-QWn"/>
+                            <constraint firstItem="gcs-4b-uaS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KX1-H5-vEZ"/>
+                            <constraint firstItem="dGM-yz-hRy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c0F-FT-Z4Y"/>
+                            <constraint firstItem="4Ma-p6-AiS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gm0-8y-3rV"/>
+                            <constraint firstItem="gcs-4b-uaS" firstAttribute="top" secondItem="dGM-yz-hRy" secondAttribute="bottom" constant="20" id="loT-5c-en0"/>
+                            <constraint firstItem="dGM-yz-hRy" firstAttribute="top" secondItem="4Ma-p6-AiS" secondAttribute="bottom" constant="20" id="n4R-ai-kOi"/>
+                            <constraint firstItem="dGM-yz-hRy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ygu-3b-K1q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animations" id="pRj-q6-X0o"/>
+                    <connections>
+                        <outlet property="firstAnimationButton" destination="4Ma-p6-AiS" id="ZYp-O8-Lfd"/>
+                        <outlet property="secondAnimationButton" destination="dGM-yz-hRy" id="gBi-nr-gHs"/>
+                        <outlet property="thirdAnimationButton" destination="gcs-4b-uaS" id="WMH-7V-6c4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="143"/>
+        </scene>
+        <!--Animation detail-->
+        <scene sceneID="hLv-KP-td9">
+            <objects>
+                <viewController id="ckv-JF-BcJ" customClass="NGNAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GE2-uT-kym"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ew-Lk-wxT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jRq-HS-wXm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcZ-ag-xxa">
+                                <rect key="frame" x="112" y="258" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="IGc-Dz-e1e"/>
+                                    <constraint firstAttribute="height" constant="30" id="dva-Sp-pkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoi-Gg-rTl">
+                                <rect key="frame" x="113" y="308" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Csz-oR-ady"/>
+                                    <constraint firstAttribute="height" constant="50" id="NFW-Ks-rJm"/>
+                                </constraints>
+                                <state key="normal" title="Animate!">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="animationButtonTapped:" destination="ckv-JF-BcJ" eventType="touchUpInside" id="K1N-h7-kIH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4366127642" green="0.59543187539999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xoi-Gg-rTl" firstAttribute="centerX" secondItem="jRq-HS-wXm" secondAttribute="centerX" id="4el-Iv-KUr"/>
+                            <constraint firstItem="Xoi-Gg-rTl" firstAttribute="centerY" secondItem="jRq-HS-wXm" secondAttribute="centerY" id="6lr-F3-hoQ"/>
+                            <constraint firstItem="AcZ-ag-xxa" firstAttribute="centerX" secondItem="jRq-HS-wXm" secondAttribute="centerX" id="EZO-Jh-TQ1"/>
+                            <constraint firstItem="Xoi-Gg-rTl" firstAttribute="top" secondItem="AcZ-ag-xxa" secondAttribute="bottom" constant="20" id="kSC-jk-JGJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animation detail" id="7Xg-8c-isP"/>
+                    <connections>
+                        <outlet property="animationButton" destination="Xoi-Gg-rTl" id="jJ5-nv-9o8"/>
+                        <outlet property="animationlabel" destination="AcZ-ag-xxa" id="Fjp-Mk-VpY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnM-qA-UAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pdA-5W-6RK">
+            <objects>
+                <navigationController id="VNw-JX-Bnf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8cL-3m-9jd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pe2-pq-nkj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsg-Fc-EMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="143"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6M7-dH-PsT"/>
+    </inferredMetricsTieBreakers>
+</document>
